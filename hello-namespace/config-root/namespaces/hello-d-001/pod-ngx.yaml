@@ -5,6 +5,6 @@ metadata:
 spec:
   nodeName: gke-dnd-team1-cluste-nap-e2-medium-uh-758de061-5j7j
   containers:
-  - name: nginx
+  - name: mypod
     image: nginx
     imagePullPolicy: IfNotPresent
