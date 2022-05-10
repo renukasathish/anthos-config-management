@@ -7,4 +7,3 @@ spec:
   containers:
   - name: mypod
     image: nginx
-    imagePullPolicy: IfNotPresent
