@@ -1,1 +1,10 @@
-
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  nodeName: gke-dnd-team1-cluste-nap-e2-medium-uh-758de061-5j7j
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
