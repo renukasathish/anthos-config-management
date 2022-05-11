@@ -1,0 +1,5 @@
+applySpecVersion: 1
+spec:
+  policyController:
+    # Set to true to install and enable Policy Controller
+    enabled: true
