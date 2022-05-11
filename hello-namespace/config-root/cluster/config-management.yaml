@@ -5,6 +5,6 @@ metadata:
 spec:
   clusterName: dnd-team1-kub-cluster-003
   git:
-    syncRepo: https://github.com/renukasathish/anthos-config-management/hello-namespace/config-root
+    syncRepo: https://github.com/renukasathish/anthos-config-management.git
     secretType: none
     policyDir: policy
