@@ -1,18 +1,9 @@
-# namespace.yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: config-1
-  labels:
-    istio-injection: enabled
-	
-
 # repo-sync.yaml
 apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
   name: repo-sync
-  namespace: config-1
+  namespace: hello-d-001
 spec:
   git:
     repo: https://github.com/renukasathish/anthos-config-management
