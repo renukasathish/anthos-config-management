@@ -1,16 +1,22 @@
-apiVersion: configsync.gke.io/v1beta1
-kind: RootSync
+# namespace.yaml
+apiVersion: v1
+kind: Namespace
 metadata:
-  name: configcsync
-  namespace: hello-d-001
+  name: config-1
+  labels:
+    istio-injection: enabled
+	
+
+# repo-sync.yaml
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: config-1
 spec:
-  sourceFormat: hierarchy 
   git:
-   repo: https://github.com/renukasathish/anthos-config-management
-     revision: HEAD
-     branch: master
-     dir: "hello-namespace/config-root"
-     auth: none
-     secretRef:
-       name: mysecret
-     noSSLVerify: true
+    repo: https://github.com/renukasathish/anthos-config-management
+    revision: HEAD
+    branch: main
+    dir: "hello-namespace/config-root"
+    auth: none
