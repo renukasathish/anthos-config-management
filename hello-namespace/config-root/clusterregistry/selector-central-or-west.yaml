@@ -8,4 +8,4 @@ spec:
       - key: location
         operator: In
         values:
-        - central
+        - us-central1-c
