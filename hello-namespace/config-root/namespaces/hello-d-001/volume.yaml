@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: test-pd
+  namespace: hello-d-001
 spec:
   containers:
   - image: k8s.gcr.io/test-webserver
