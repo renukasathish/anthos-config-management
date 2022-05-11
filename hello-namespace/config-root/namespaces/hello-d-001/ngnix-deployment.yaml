@@ -3,8 +3,6 @@ kind: Pod
 metadata:
   name: nginx
   namespace: hello-d-001
-  annotations:
-    configmanagement.gke.io/cluster-selector: selector-central-or-west
   labels:
     name: mypod
 spec:
