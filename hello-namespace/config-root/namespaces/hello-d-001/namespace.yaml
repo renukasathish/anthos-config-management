@@ -17,6 +17,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: hello-d-001
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-central-or-west
   labels:
     istio-injection: enabled
 # [END anthosconfig_hello_namespace_namespace] 
