@@ -1,6 +1,16 @@
-applySpecVersion: 1
-kind: policyController
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: configcsync
+  namespace: hello-d-001
 spec:
-  policyController:
-    # Set to true to install and enable Policy Controller
-    enabled: true
+  sourceFormat: hierarchy 
+  git:
+   repo: https://github.com/renukasathish/anthos-config-management
+     revision: HEAD
+     branch: master
+     dir: "hello-namespace/config-root"
+     auth: none
+     secretRef:
+       name: mysecret
+     noSSLVerify: true
