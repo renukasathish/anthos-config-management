@@ -2,7 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
-  namespace: hello-d-001
+  annotations:
+    configmanagement.gke.io/cluster-selector: dev
   labels:
     name: mypod
 spec:
