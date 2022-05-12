@@ -3,4 +3,4 @@ apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
   name: dnd-team1-kub-cluster-003
   labels:
-    environment: development
+    env: dev
