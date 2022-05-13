@@ -17,7 +17,7 @@ kind: ConfigManagement
 metadata:
   name: config-management
 spec:
-  clusterName: dnd-d-cluster-004
+  clusterName: dnd-team1-cluster-006
   git:
     syncRepo: https://github.com/renukasathish/anthos-config-management
     syncBranch: main
